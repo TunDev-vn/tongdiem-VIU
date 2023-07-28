@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm</title>
+    <link rel="stylesheet" href="./grade.css">
+    <link rel="shortcut icon" type="image/png" href="./image/calculator-favicon.png">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="./">
+                <img class="logo" src="./image/calculator-logo.png">
+            </a>
+            <a href="https://daotao.viu.edu.vn/dashboard.html" target="_blank">
+                <img class="logo" src="./image/VIU-logo.png">
+            </a>
+        </div>
+    </header>
+    <main>
+        <button class="tutorial">xem hướng dẫn
+            <div class="popup-tutorial">
+                <p class="text-tutorial">Chú ý: Những học phần có dấu <strong style="color: red;">*</strong> ở cuối sẽ không tính vào điểm trung bình học kì nên không cần thêm.<br>Cách xem: Đăng kí học phần > Chương trình khung > học kì hiện tại</p>
+                <img src="./image/tutorial-image.png">
+                <p class="text-tutorial">Bước 1. Nhập tên học phần<br>Bước 2. Nhập số tín chỉ của học phần đó<br>Bước 3. Nhập điểm tổng kết của học phần đó<br>Bước 4. Nhấn thêm và tiếp tục nhập các môn còn lại<br>=> Khi đã thêm hết nhấn tính điểm để xem kết quả</p>
+            </div>
+        </button>
+        <div class="container">
+            <div class="container-grid">
+                <div class="grid-setup">
+                    <input type="text" class="ten-mon" placeholder="Tên học phần">
+                    <input type="text" class="tin-mon" placeholder="Số tín chỉ">
+                    <input type="text" class="diem-mon" placeholder="Điểm">
+                    <button onclick="addDiem(); outPut();" class="button-them">Thêm</button>
+                </div>
+                <div class="output grid-setup">
+                    
+                </div>
+            </div>
+            <div class="total">
+                <div class="total-container">
+                    <button class="total-button" onclick="total();">TÍNH ĐIỂM</button>
+                    <button class="refresh">LÀM MỚI</button>
+                </div>
+                    <p class="total-output"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>@made by <a href="https://tundev.id.vn" target="_blank">TunDev</a></p>
+    </footer>
+    <script src="./grade.js"></script>
+</body>
+</html>
